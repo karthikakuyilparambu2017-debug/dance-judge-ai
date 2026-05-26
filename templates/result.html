@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dance Judge Results</title>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+</head>
+<body>
+    <h1>Dance Judge Results</h1>
+    <video controls width="600" autoplay>
+        <source src="{{ video_url }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Score Updates:</h2>
+    <div id="scores"></div>
+
+    <script>
+        const socket = io();
+
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+
+        socket.on('score_update', (data) => {
+            const scoresDiv = document.getElementById('scores');
+            const scoreElement = document.createElement('p');
+            scoreElement.textContent = data.message;
+            scoresDiv.appendChild(scoreElement);
+        });
+
+        socket.on('error', (data) => {
+            alert('Error: ' + data.error);
+        });
+    </script>
+</body>
+</html>

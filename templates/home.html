@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Dance Judge AI</title>
+
+    <!-- Corrected image path using Flask's url_for -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("{{ url_for('static', filename='images/home.jpg') }}") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #f04e30;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff7f50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Dance Judge AI</h1>
+    <p>Upload your Bharatanatyam dance video and get real-time scores for synchronization, makeup, and costume accuracy.</p>
+
+    <!-- Navigation Buttons -->
+    <a href="/signin" class="btn">Dance Judge AI</a>
+    <a href="/login" class="btn">Login</a>
+    <a href="/signin" class="btn">Signin</a>
+    <a href="/contact" class="btn">Contact Us</a>
+    <a href="/about" class="btn">About Us</a>
+</div>
+
+</body>
+</html>

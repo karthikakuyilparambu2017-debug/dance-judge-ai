@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Dance Judge AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #444;
+        }
+
+        .about-section, .features, .how-it-works {
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features ul li {
+            background: url('https://img.icons8.com/ios-filled/20/4CAF50/checkmark.png') no-repeat left center;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px 25px;
+            background: #f04e30;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #ff7f50;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ✅ About Dance Judge AI -->
+    <div class="about-section">
+        <h1>About Dance Judge AI</h1>
+        <p>Dance Judge AI is an innovative artificial intelligence system designed to analyze Bharatanatyam dance performances. Using computer vision and AI models, it evaluates dancers based on:</p>
+    </div>
+
+    <!-- ✅ Features Section -->
+    <div class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>🎭 <strong>Synchronization Analysis:</strong> Evaluates how well two or more dancers move together.</li>
+            <li>💄 <strong>Makeup Assessment:</strong> Checks for traditional Bharatanatyam makeup elements like eye and lip highlights.</li>
+            <li>👗 <strong>Costume Evaluation:</strong> Identifies whether the attire follows Bharatanatyam's traditional dress code.</li>
+            <li>📹 <strong>Real-Time Video Processing:</strong> Works with uploaded or live-streamed performances.</li>
+            <li>📊 <strong>Score-Based Feedback:</strong> Provides numerical scores and insights for improvement.</li>
+        </ul>
+    </div>
+
+    <!-- ✅ How It Works -->
+    <div class="how-it-works">
+        <h2>How It Works</h2>
+        <p>Dance Judge AI uses **computer vision and AI-powered algorithms** to analyze dance videos. Here's the process:</p>
+        <ol>
+            <li><strong>Step 1:</strong> Upload a Bharatanatyam dance video.</li>
+            <li><strong>Step 2:</strong> The AI extracts skeleton-based motion data using **MediaPipe**.</li>
+            <li><strong>Step 3:</strong> It compares dancers’ movements to measure synchronization accuracy.</li>
+            <li><strong>Step 4:</strong> Facial recognition detects Bharatanatyam makeup features.</li>
+            <li><strong>Step 5:</strong> Costume detection ensures traditional Bharatanatyam attire is worn.</li>
+            <li><strong>Step 6:</strong> The system generates a **final report with scores**.</li>
+        </ol>
+    </div>
+
+    <!-- ✅ Back to Home Button -->
+    <a href="/home" class="back-btn">Back to Home</a>
+
+</div>
+
+</body>
+</html>
