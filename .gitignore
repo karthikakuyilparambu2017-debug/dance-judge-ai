@@ -1,5 +1,10 @@
+
 .venv/
 __pycache__/
+*.pyc
+
 dataset/
 extracted_frames/
 static/uploads/
+*.mp4
+*.h5
